@@ -14,7 +14,7 @@ module.exports = {
     'prefer-arrow-callback': 'off',
     'vue/script-indent': [
       'error',
-      0,
+      1,
       {
         baseIndent: 2,
         switchCase: 2,
