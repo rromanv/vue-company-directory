@@ -13,11 +13,12 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vue/eslint-config-prettier": "^7.0.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.4.0",
-    "@rushstack/eslint-patch": "^1.1.4",
     "@vitejs/plugin-vue": "^3.0.0",
     "autoprefixer": "^10.4.8",
     "eslint": "^8.23.0",
