@@ -4,7 +4,7 @@
 
   const { isAuthenticated, logout, user } = useAuth()
 
-  const brand = ref('🏢 Fake Company Directory')
+  const brand = ref('🏢 Vue 3 (Fake) Company Directory')
 </script>
 
 <template>
