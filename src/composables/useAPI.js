@@ -27,6 +27,7 @@ const getEmployees = async () => {
   })
   employees.value = response.data
   pages.value = Number(response.headers['x-total-pages'])
+  console.log(response.headers['x-total-pages'])
   loading.value = false
 }
 
