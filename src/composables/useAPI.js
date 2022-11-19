@@ -8,6 +8,9 @@ const loading = ref(false)
 const pageSize = ref(8)
 
 const api = axios.create({
+  baseURL: import.meta.env.PROD
+    ? import.meta.env.VITE_API_URL
+    : import.meta.env.BASE_URL,
   auth: {
     username: import.meta.env.VITE_API_USERNAME,
     password: import.meta.env.VITE_API_PASSWORD,
