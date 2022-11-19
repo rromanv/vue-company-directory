@@ -1,5 +1,6 @@
 import { ref } from 'vue'
 import axios from 'axios'
+import { def } from '@vue/shared'
 
 const employees = ref([])
 const pages = ref(1)
@@ -31,8 +32,9 @@ const getEmployees = async () => {
   loading.value = false
 }
 
-getEmployees()
-
-export default function useAPI() {
+const useAPI = async () => {
+  await getEmployees()
   return { employees, pages, activePage, loading, pageSize, getEmployees, api }
 }
+
+export default useAPI
