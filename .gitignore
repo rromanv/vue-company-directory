@@ -35,3 +35,6 @@ Thumbs.db
 .dccache
 
 .env
+# Local Netlify folder
+.netlify
+.vercel
