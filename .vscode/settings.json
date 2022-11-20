@@ -35,5 +35,6 @@
   "editor.quickSuggestions": {
     "comments": "on",
     "strings": "on"
-  }
+  },
+  "dotenv.enableAutocloaking": false
 }
